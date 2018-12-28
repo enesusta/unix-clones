@@ -65,12 +65,8 @@ char *current_path(size_t size) {
 
 	buff = (char *)malloc(sizeof(cwd));
 
-	if(getcwd(buff, sizeof(cwd))!=NULL) {
-		//printf("\nCurrent working dir :%s\n",cwd);
-		
-	} else {
-		perror("getcwd() error");
-	}
+	getcwd(buff, sizeof(cwd));
+
 	return (char *)buff;
 }
 
@@ -103,8 +99,6 @@ char *create_path(char *cwd,char *append) {
 		strcat(path,cwd);
 		strcat(path,"\\");
 		strcat(path,append);
-	}else {
-	}
 	
 	return (char *)path;
 }
