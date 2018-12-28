@@ -64,13 +64,8 @@ char *current_path(size_t size) {
 	char *buff;
 
 	buff = (char *)malloc(sizeof(cwd));
-
-	if(getcwd(buff, sizeof(cwd))!=NULL) {
-		//printf("\nCurrent working dir :%s\n",cwd);
+	getcwd(buff, sizeof(cwd)){
 		
-	} else {
-		perror("getcwd() error");
-	}
 	return (char *)buff;
 }
 
