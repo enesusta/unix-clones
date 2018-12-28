@@ -1,5 +1,5 @@
 
-## TRY
+## a touch command clone as on Linux/Unix using C lang
 
 
 
