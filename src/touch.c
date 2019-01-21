@@ -100,6 +100,7 @@ char *create_path(char *cwd,char *append) {
 		strcat(path,"\\");
 		strcat(path,append);
 	
+	}
 	return (char *)path;
 }
 
