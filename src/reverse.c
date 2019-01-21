@@ -9,9 +9,9 @@
 
 char * increment_pointer(char *);
 void reverse_string(char *);
-void main() {
+void main(int argc, char *argv[]) {
 
-	char *p = "gunes";
+	char *p = argv[1];
 	printf(p);
 	printf("\n");
 	reverse_string(p);
@@ -22,10 +22,9 @@ void main() {
 
 void reverse_string(char *arr) {
 
-	int i;
 	arr = increment_pointer(arr);
 
-	printf("\n\n final addres is : %d\n",arr);
+	printf("\n final addres is : %d\n",arr);
 	
 	*arr--;
 
